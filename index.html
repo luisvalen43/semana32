@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trabajo semana 32</title>
+    <link rel="stylesheet" type="text/css" href="estilofle.css">
+</head>
+<body>
+
+<div class="cuadro1" id="p"><center><h1>suma y resta</h1></center>
+<div class="mostrar" id="hp" onclick="mostrar();"><center><h1>mostrar<h1></center></div>
+<div class="cuadro2" id="hp2" onclick="definir();"><center><h1>que es</h1></center></div>
+<div class="cuadro3" id="hp3" onclick="solucion();"><center><h1>solucion</h1></center></div>
+
+</div>
+<div class="mostrar2" id="hpm"><img src="suma.jpg" style="height: 100px; width: 100px;"><br><br><img src="resta.jpg" style="height: 100px; width: 100px;">
+<h2>suma y resta</h2><br><a href="index.html">volver</a></div>
+<div class="quees" id="hpm2"><a href="index.html"><center><h3>suma:<div class="quees3">la suma es: La adición o suma es la operación matemática de composición que consiste en combinar o añadir dos números o más para obtener una cantidad final o total. La suma también ilustra el proceso de juntar dos colecciones de objetos con el fin de obtener una sola colección. </div>resta:
+<div class="quees4">la resta es: La resta o la sustracción es una operación de aritmética que se representa con el signo; representa la operación de eliminación de objetos de una colección.</div>
+</h3></center><br></a></div>
+<div class="solu" id="hpm3">
+	<center><input type="text" name="num1" id="num1" placeholder="numero que suma">
+	<br>
+	<input type="text" name="num2" id="num2" placeholder="numero que suma">
+	<br>
+	<input type="text" name="num3" id="num3" placeholder="numero que resta">  
+    <br>
+ <button type="button" onclick="ejer()">Sumar</button>  
+ <h1><p id="sumando"></p></h1>
+ </center>  
+ <script>  
+ function ejer() {  
+     
+  var x=document.getElementById("num1").value;  
+  var y=document.getElementById("num2").value;  
+  var z=document.getElementById("num3").value;
+   if (isNaN(x) || isNaN(y)) {  
+     text = "Es necesarios introducir dos números válidos";  
+   } else {  
+     //si no ponemos parseFloat concatenaría x con y  
+     suma=parseFloat(x)+parseFloat(y)-parseFloat(z);  
+     text= suma;  
+   }  
+   document.getElementById("sumando").innerHTML = text;  
+ }  
+</script>
+<br>
+<a href="index.html">volver</a>
+</div>
+
+
+<script src="cambiar.js"></script>
+</body>
+</html>
